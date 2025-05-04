@@ -1,5 +1,4 @@
- <?php
- 
-    echo "oi eu sou um script PHP";
+<?php
+"oi eu sou um script php";
 
-    ?>
+?>
