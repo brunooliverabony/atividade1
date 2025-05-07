@@ -9,30 +9,70 @@
     <h1>Inputs Basicos</h1>
 
     <form action="/htmls/inputs_basicos.html" method="post">
+
         <label>Nome</label> <br>
-        <input type="text" name="nome" class="" id="" /> <br>
+        <input placeholder="Insira seu nome:" type="text" name="nome" class="" id="" /> <br>
 
         <label>Senha</label> <br>
-        <input type="password" name="senha"/> <br>
+        <input placeholder="Insira sua senha:" type="password" name="senha"/> <br><br>
+
+        <br>
+        <label>Time</label><br>
+        <input type="text" placeholder="insira seu time:" name="time" list="lista_times">
+        <datalist id="lista_times">
+            <option value="Santos"/>
+            <option value="Palmeiras"/>
+            <option value="Fluminense"/>
+            <option value="CRB"/>
+            <option value="Bahia"/>
+        </datalist>
+
+        <br><br>
 
         <label>Opções</label>
         <input type="radio" name="opção">A
         <input type="radio" name="opção">B
         <input type="radio" name="opção">C
-        <br>
+        <br><br>
 
         <label>Multipla Escolha </label>
         <input type="checkbox" name="multiplo">1
         <input type="checkbox" name="multiplo">2
         <input type="checkbox" name="multiplo">3
-        <br>
+        <br><br>
 
         <label>Texto</label><br>
-        <textarea name="texto" id="" cols="30" rows="10"></textarea> <br>
+        <textarea name="texto" id="" cols="30" rows="10"></textarea> <br><br>
 
         <label>Arquivo</label><br>
-        <input type="file" name="Arquivo" id="">
+        <input type="file" name="Arquivo" id=""><br><br>
 
+        <label>Sexo</label><br>
+        <select name="Sexo" id="">
+            <option value="">Selecione</option>
+            <option value="M">Masculino</option>
+            <option selected ="F">Feminino</option>
+
+        </select> <br><br>
+
+        <label>Marcas de carros</label><br>
+        <select name="Carro" id="">
+        <optgroup label="Alemães">
+            <option selected="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+        </optgroup>
+        <optgroup label="Suecos">
+            <option value="Volvo">Volvo</option>
+            <option value="Saab">Saab</option>
+           
+        </optgroup>
+
+    </select>
+
+    <br><br>
+    <input type="button" value="Botão sem ação"> <br><br>
+
+    <input type="submit" value="Enviar">
 
 
 
