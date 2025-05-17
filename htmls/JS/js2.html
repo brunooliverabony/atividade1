@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
+        .paragrafo {
+            background-color: chartreuse ;
+            padding:20px ;
+        }
+
+    </style>
+    <script>
+        function funcaoTeste() {
+            //alert('Estou aqui!');
+            document.getElementById("box1").style.backgroundColor = "blue";
+            document.getElementById("box1").style.textAlign = "center";
+            document.getElementById("box1").style.color = "white"; //Mais usados na programação---->
+
+            document.getElementsByClassName("paragrafo")[0].style.backgroundColor = "blue"; //Mais usados na programação---->
+
+
+        }
+
+       
+
+    </script>
+
+
+</head>
+<body>
+
+    <h1>Seletores</h1>
+
+    <div id="box1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit iusto voluptate sequi, sit quo incidunt! Eveniet eligendi iure, quisquam delectus, natus consequatur perferendis voluptatum odio neque autem at dolores doloribus.
+    </div>
+
+    <input type="button" value="Acionar" onclick="javascript:funcaoTeste();">
+
+    <p class="paragrafo">Paragrafo 1</p> <!--0-->
+    <p class="paragrafo">Paragrafo 2</p> <!--1-->
+    <p class="paragrafo">Paragrafo 3</p><!--2-->
+
+
+    
+</body>
+</html>
