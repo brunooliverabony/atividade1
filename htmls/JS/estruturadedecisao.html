@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de decisão</title>
+    <script>
+
+        var idade = 10;
+        var sexo = "masculino"
+        var time = "Palmeiras"
+
+        //console.log(idade);
+
+        if(idade >= 18) { //se isso for verdade
+            console.log("maior de idade");
+        } else if (sexo == "masculino") { //caso contrário
+            console.log("Menor de idade, que talvez goste de carrinho");
+            switch (time) {
+                case "São Paulo":
+                    console.log("talvez queira uma camisa do São Paulo");
+                    break;
+                    case "Corintians":
+                    console.log("talvez queira uma camisa do Corintias");
+                    break;
+                    case "Santos":
+                    console.log("talvez queira uma camisa do Santos");
+                    break;
+                    case "Palmeiras":
+                    console.log("talvez queira uma camisa do Palmeiras");
+                    break;
+                    
+                default:
+                    console.log("não gosta de futebol");
+                    break;
+            }
+        }
+        else {
+           console.log("Menor de idade, que talvez goste de boneca") ;
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Decisão</h1>
+    
+</body>
+</html>
